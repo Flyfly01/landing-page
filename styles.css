@@ -1,0 +1,39 @@
+/* To begin, every section of the landing page is going to have a container class. Because of this we need to be grouping container with other classes to not confuse things */
+
+/* We need to use the container class (which will count for every section) and give it a specified width and then use margin to center this container in the middle of the page */
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+
+.navbar {
+  background: #1f2937;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #e5e7eb;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* links class is holding all the links and we need to put it as display flex to change layout from horizontal to vertical. Also need to add a gap to space things out from each other */
+.links {
+  display: flex;
+  gap: 20px;
+}
+
+.logo {
+  font-size: 24px;
+  color: #f9faf8;
+}
