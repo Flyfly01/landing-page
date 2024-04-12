@@ -2,10 +2,9 @@
 
 /* We need to use the container class (which will count for every section) and give it a specified width and then use margin to center this container in the middle of the page */
 .container {
-  width: 1200px;
+  width: 1100px;
   margin: 0 auto;
 }
-
 
 .navbar {
   background: #1f2937;
@@ -36,4 +35,46 @@ ul {
 .logo {
   font-size: 24px;
   color: #f9faf8;
+}
+
+/* MOVING ONTO SECTION 2 */
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* The items aren't aligning center in a vertical manner like we want. THe reason is that the height is actually set on the header, and not the container itself which holds the items. When we set height as 100%, the height will take up 100% of the header */
+  height: 100%;
+}
+
+.header {
+  /*Feel free to change background color to green to view separation between navbar and header */
+  background: #1f2937;
+  /* The header is taking up as much space as the content ie. the height of the header = height of the image. We need to make the actual header bigger in heights and center all the content in a vertical manner */
+  height: 500px;
+}
+
+/* The content is spread out horizontally as the etxt isn't wrapping like it should. To counter this, we set a max-width on it */
+.content {
+  max-width: 370px;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: bold;
+  color: #f9faf8;
+}
+
+p {
+  font-size: 18px;
+  color: #e5e7eb;
+}
+
+button {
+  background-color: #3883f6;
+  color: white;
+  padding: 8px 25px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 18px;
 }
