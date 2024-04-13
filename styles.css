@@ -54,7 +54,7 @@ ul {
   height: 500px;
 }
 
-/* The content is spread out horizontally as the etxt isn't wrapping like it should. To counter this, we set a max-width on it */
+/* The content is spread out horizontally as the text isn't wrapping like it should. To counter this, we set a max-width on it */
 .content {
   max-width: 370px;
 }
@@ -74,7 +74,44 @@ button {
   background-color: #3883f6;
   color: white;
   padding: 8px 25px;
+  /* To get rounded edges */
   border-radius: 10px;
   font-weight: bold;
   font-size: 18px;
 }
+
+/* MOVING ONTO 3RD SECTION */
+
+h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #1f2937;
+  /* This does not need to be flex. Easy to edit and center */
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 40px;
+}
+
+.body .container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* Items were spread out too far apart so I restricted the width of the container */
+  max-width: 700px;
+}
+
+/* Text beneath image was overflowing the sides of the image. We need it to stay under the image so let's set the width for the text */
+.text {
+ max-width: 100px;
+}
+
+/* Text was justified left under the images. We need to center text in the ENTIRE body class */
+.body {
+  text-align: center;
+  background-color: green;
+  height: 400px;
+}
+
+
+
