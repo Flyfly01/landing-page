@@ -37,7 +37,7 @@ ul {
   color: #f9faf8;
 }
 
-/* MOVING ONTO SECTION 2 */
+/* MOVING ONTO 2ND SECTION  */
 
 .header .container {
   display: flex;
@@ -63,11 +63,13 @@ h1 {
   font-size: 48px;
   font-weight: bold;
   color: #f9faf8;
+  margin: 0;
 }
 
 p {
   font-size: 18px;
   color: #e5e7eb;
+  margin: 8px 0px;
 }
 
 button {
@@ -141,3 +143,42 @@ h3 {
   /* The section before this one matches same height so copying height value from there and applying 100% height like before in order to get elements centered */
   height: 400px;
 }
+
+/* MOVING ONTO 5TH SECTION */
+
+/* .action is holding THE ACTUAL BLUE CONTAINER. We want this container centered vertically and horizontally within the white action background. We need to put display flex in order to apply all these settings */
+.action {
+  height: 325px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Now have to take blue container and add display flex in order to get things to line up properly. This setup is a good example of a box within a box */
+.bluecontainer {
+  display: flex;
+  /* Applying same width as section 1 & 2 */
+  width: 1100px;
+  height: 125px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3883f6;
+}
+
+.actionbutton button {
+  margin-right: 100px;
+  border-color: white;
+}
+
+h4 {
+  font-size: 22px;
+  color:#e5e7eb;
+  margin: 0;
+}
+
+.actiontext {
+  margin-left: 100px;
+}
+
+
+
