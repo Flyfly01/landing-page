@@ -113,5 +113,31 @@ h2 {
   height: 400px;
 }
 
+/* MOVING ONTO 4TH SECTION */
+.quotesection .container {
+  display: flex;
+  max-width: 700px;
+  /* The quote and the author is side by side, next to each other once display flex was put on. But we want the author to come beneath. So if we change flex direction to column, it goes beneath */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
 
+.author {
+  align-self: flex-end;
+}
 
+h3 {
+  font-size: 36px;
+  font-style: italic;
+  font-weight: lighter;
+  color: #1f2937;
+  margin: 0;
+}
+
+.quotesection {
+  background-color: #e5e7eb;
+  /* The section before this one matches same height so copying height value from there and applying 100% height like before in order to get elements centered */
+  height: 400px;
+}
