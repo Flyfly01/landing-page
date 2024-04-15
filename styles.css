@@ -111,7 +111,7 @@ h2 {
 /* Text was justified left under the images. We need to center text in the ENTIRE body class */
 .body {
   text-align: center;
-  background-color: green;
+  background-color: white;
   height: 400px;
 }
 
@@ -180,5 +180,21 @@ h4 {
   margin-left: 100px;
 }
 
+/* MOVING ONTO 6TH SECTION */
 
+.footer {
+  background-color: #1f2937;
+  height: 60px;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.endtext {
+  color: #f9faf8;
+}
 
